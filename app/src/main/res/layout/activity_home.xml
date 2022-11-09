@@ -1,18 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/drawer_layout"
     tools:context=".activities.HomeActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="@dimen/margin_default"
+                android:src="@drawable/ic_baseline_menu_24"
+                android:elevation="8dp"
+                app:tint="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/carousel_home_size"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:id="@+id/worm_dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                app:dotsColor="@color/color_primary"
+                app:dotsStrokeColor="@color/white"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="16dp"
+                app:dotsSpacing="4dp"
+                app:dotsStrokeWidth="2dp"
+                app:layout_constraintBottom_toBottomOf="@id/view_pager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_about_anahuac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_anahuac"
+                android:layout_margin="@dimen/margin_default"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/view_pager" />
+
+            <Button
+                android:id="@+id/btn_conocenos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:backgroundTint="@color/color_primary"
+                android:text="@string/conocenos"
+                app:layout_constraintTop_toBottomOf="@id/tv_about_anahuac"
+                />
+
+            <TextView
+                android:id="@+id/tv_licenciaturas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginHorizontal="@dimen/margin_default"
+                android:text="@string/licenciaturas"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/btn_conocenos"/>
+
+            <TextView
+                android:id="@+id/tv_about_licenciaturas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_short"
+                android:layout_marginHorizontal="@dimen/margin_default"
+                android:text="@string/about_licenciaturas"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/tv_licenciaturas"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_licenciaturas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_short"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/tv_about_licenciaturas"
+                tools:listitem="@layout/item_licenciatura"
+                />
+
+            <Button
+                android:id="@+id/btn_campus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color_primary"
+                android:text="Campus"
+                app:layout_constraintTop_toBottomOf="@id/rv_licenciaturas"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:itemTextColor="@color/black"
+        app:headerLayout="@layout/header_drawer_view"
+        app:menu="@menu/menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

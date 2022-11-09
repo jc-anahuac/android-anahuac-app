@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nosotros"
+        android:title="Nosotros" />
+
+    <item
+        android:id="@+id/licenciaturas"
+        android:title="Licenciaturas" />
+
+    <item
+        android:id="@+id/latente"
+        android:title="Latente" />
+
+    <item
+        android:id="@+id/acercade"
+        android:title="Acerca de" />
+</menu>

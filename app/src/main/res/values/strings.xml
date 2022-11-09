@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Anahuac</string>
+    <string name="about_anahuac">LA UNIVERSIDAD ANÁHUAC ACTUALMENTE ESTÁ POSICIONADA DENTRO DEL 2 % DE MEJORES UNIVERSIDADES DEL MUNDO
+Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
+    <string name="conocenos">Conócenos</string>
+    <string name="licenciaturas">Licenciaturas</string>
+    <string name="about_licenciaturas">Contamos con más de 60 licenciaturas, distribuidos los diferentes campus que tenemos para ti.</string>
 </resources>

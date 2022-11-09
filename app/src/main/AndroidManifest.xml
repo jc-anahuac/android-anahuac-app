@@ -20,6 +20,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".activities.AboutAppActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.CampusDetailActivity"
             android:exported="false">
             <meta-data
@@ -35,13 +42,6 @@
         </activity>
         <activity
             android:name=".activities.LatenteHomeActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".activities.AboutActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -70,6 +70,7 @@
                 android:value="" />
         </activity>
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".activities.HomeActivity"
             android:exported="false">
 
