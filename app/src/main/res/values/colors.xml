@@ -8,6 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="black_50">#80000000</color>
+
+
     <color name="color_primary">#FE5900</color>
     <color name="color_divisor">#C5C1C1</color>
 </resources>
