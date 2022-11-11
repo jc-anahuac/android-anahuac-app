@@ -12,6 +12,9 @@ public class Campus {
     private int map;
     private List<Licenciatura> licenciaturaList;
 
+    public Campus(String s, int ic_escuela_derecho) {
+    }
+
     public String getCode() {
         return code;
     }
