@@ -18,4 +18,11 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
 
     <string name="campus_title">Campus</string>
     <string name="campus_description">Contamos con más de 60 licenciaturas, distribuidos los diferentes campus que tenemos para ti.</string>
+
+    <string name="txt_titulo_latente">CONGRESO LATENTE 9A EDICIÓN</string>
+    <string name="txt_latente_congreso">El Congreso Latente 9a Edición es un congreso internacional de diseño en dónde se fusionan todas las áreas de diseño para formar un universo colaborativo.</string>
+    <string name="conferencistas">Conferencistas</string>
+    <string name="talleres">TALLERES</string>
+    <string name="txt_boleto">ADQUIERE TU BOLETO</string>
+    <string name="btn_click_aqui">CLICK AQUÍ</string>
 </resources>
