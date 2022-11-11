@@ -51,7 +51,7 @@ public class BachelorListAdapter extends RecyclerView.Adapter<BachelorListAdapte
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            tvBachelorName = itemView.findViewById(R.id.tv_campus_name);
+            tvBachelorName = itemView.findViewById(R.id.tv_bachelor_name);
             ivBachelor = itemView.findViewById(R.id.iv_lic);
         }
     }
