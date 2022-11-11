@@ -8,6 +8,9 @@
     <dimen name="corner_radius">8dp</dimen>
     <dimen name="margin_medium">8dp</dimen>
     <dimen name="image_height">200dp</dimen>
+
+    <dimen name="fade_background">40dp</dimen>
+
     <dimen name="font_size_tittle">20sp</dimen>
 
 

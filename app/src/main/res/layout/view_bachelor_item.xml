@@ -7,7 +7,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_medium"
+        android:layout_margin="18dp"
         app:cardCornerRadius="@dimen/corner_radius"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,12 +22,15 @@
 
         <View
             android:layout_width="match_parent"
-            android:background="@color/black_50"
-            android:layout_height="@dimen/image_height"
+            android:background="@drawable/fade_text"
+
+            android:layout_height="@dimen/fade_background"
+            android:layout_gravity="bottom"
+
             />
 
         <TextView
-            android:id="@+id/tv_campus_name"
+            android:id="@+id/tv_bachelor_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txt_escuelas"
@@ -38,14 +41,6 @@
             android:layout_margin="@dimen/margin_medium"
             android:textAlignment="center"
             />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            />
-
-
 
     </androidx.cardview.widget.CardView>
 
