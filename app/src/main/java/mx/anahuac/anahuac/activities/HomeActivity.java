@@ -19,14 +19,15 @@ import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator;
 
 import mx.anahuac.anahuac.R;
+import mx.anahuac.anahuac.adapters.CampusGalleryAdapter;
 import mx.anahuac.anahuac.adapters.HomeHeaderAdapter;
 import mx.anahuac.anahuac.adapters.LicenciaturasAdapter;
 import mx.anahuac.anahuac.models.Licenciatura;
 
 public class HomeActivity extends AppCompatActivity implements LicenciaturasAdapter.LicenciaturaListener {
 
-    private ViewPager viewPager;
-    private WormDotsIndicator wormDotsIndicator;
+    private ViewPager viewPager, viewPagerCampus;
+    private WormDotsIndicator wormDotsIndicator, campusIndicator;
     private ImageView ivMenu, ivClose;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
@@ -45,9 +46,14 @@ public class HomeActivity extends AppCompatActivity implements LicenciaturasAdap
         navigationView = findViewById(R.id.navigation_view);
         ivClose = navigationView.getHeaderView(0).findViewById(R.id.iv_close);
         rvLicenciaturas = findViewById(R.id.rv_licenciaturas);
+        viewPagerCampus = findViewById(R.id.vp_campus);
+        campusIndicator = findViewById(R.id.campus_indicator);
 
         viewPager.setAdapter(new HomeHeaderAdapter(getSupportFragmentManager()));
         wormDotsIndicator.attachTo(viewPager);
+
+        viewPagerCampus.setAdapter(new CampusGalleryAdapter(getSupportFragmentManager()));
+        campusIndicator.attachTo(viewPagerCampus);
 
         rvLicenciaturas.setAdapter(new LicenciaturasAdapter(Licenciatura.getLicenciaturas(), this));
 

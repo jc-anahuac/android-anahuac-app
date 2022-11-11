@@ -102,12 +102,56 @@
                 tools:listitem="@layout/item_licenciatura"
                 />
 
+            <TextView
+                android:id="@+id/tv_campus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:text="@string/campus_title"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/rv_licenciaturas"/>
+
+            <TextView
+                android:id="@+id/tv_about_campus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_short"
+                android:layout_marginHorizontal="@dimen/margin_default"
+                android:text="@string/campus_description"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/tv_campus"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_campus"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/margin_short"
+                android:layout_height="@dimen/campus_gallery_height"
+                app:layout_constraintTop_toBottomOf="@id/tv_about_campus"/>
+
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:id="@+id/campus_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                app:dotsColor="@color/color_primary"
+                app:dotsStrokeColor="@color/white"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="16dp"
+                app:dotsSpacing="4dp"
+                app:dotsStrokeWidth="2dp"
+                app:layout_constraintBottom_toBottomOf="@id/vp_campus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
             <Button
                 android:id="@+id/btn_campus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/color_primary"
                 android:text="Campus"
+                android:visibility="gone"
                 app:layout_constraintTop_toBottomOf="@id/rv_licenciaturas"
                 />
 

@@ -1,6 +1,9 @@
 package mx.anahuac.anahuac.models;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import mx.anahuac.anahuac.R;
 
 public class Campus {
     private String code;
@@ -12,8 +15,6 @@ public class Campus {
     private int map;
     private List<Licenciatura> licenciaturaList;
 
-    public Campus(String s, int ic_escuela_derecho) {
-    }
 
     public String getCode() {
         return code;
@@ -77,5 +78,35 @@ public class Campus {
 
     public List<Licenciatura> getLicenciaturaList() {
         return licenciaturaList;
+    }
+
+    public static List<Campus> getCampus() {
+        List<Campus> campus = new ArrayList<>();
+
+        Campus item1 = new Campus();
+        item1.setCode("cun");
+        item1.setNombre("Cancún");
+        item1.setImage(R.drawable.ic_campus_cancun);
+
+        Campus item2 = new Campus();
+        item2.setCode("cdmx_norte");
+        item2.setNombre("Ciudad de México Norte");
+        item2.setImage(R.drawable.ic_campus_mx_norte);
+
+        campus.add(item1);
+        campus.add(item2);
+
+        return campus;
+    }
+
+    public static Campus findByCode(String code){
+        Campus campus = null;
+        for(Campus c : getCampus()){
+            if(c.code.equals(code)){
+                campus = c;
+                break;
+            }
+        }
+        return campus;
     }
 }
