@@ -6,6 +6,15 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
     <string name="licenciaturas">Licenciaturas</string>
     <string name="about_licenciaturas">Contamos con más de 60 licenciaturas, distribuidos los diferentes campus que tenemos para ti.</string>
 
+    <string name="perfil">Perfíl</string>
+    <string name="activities">Actividades</string>
+    <string name="studyplan">Plan de Estudios</string>
+    <string name="perfil_de_disenador">Perfil de un Diseñador Multimedia</string>
+    <string name="descripcion_perfil">Al ser un diseñador multimedia, estarás rodeado de diferentes y nuevas tecnologías emergentes sobre todo digitales, en dónde puedas ejercer y culminar tu creatividad para diseñar diferentes necesidades digitales. Si eres alguien al quién le apasiona la tecnología, junto con el diseño, esto es para ti.</string>
+    <string name="contact_guide">Contacta a un asesor</string>
+
+
     <string name="txt_escuelas">Escuela de Biotecnologia</string>
+
 
 </resources>
