@@ -25,4 +25,13 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
     <string name="talleres">TALLERES</string>
     <string name="txt_boleto">ADQUIERE TU BOLETO</string>
     <string name="btn_click_aqui">CLICK AQUÍ</string>
+
+    <string name="mission_title">MISIÓN</string>
+    <string name="mission_body">Contribuir a la formación integral de líderes de acción positiva y promover institucionalmente el desarrollo de la persona y de la sociedad, inspirados en los valores de humanismo cristiano.</string>
+    <string name="vision_title">VISIÓN</string>
+    <string name="vision_body">Ser la Universidad Internacional más reconocida de Cancún y del Caribe.
+Estar entre las 3 principales Universidades Internacionales  de América Latina.
+Estar entre las 10 Universidades Internacionales Católicas  más reconocidas del mundo.
+Distinguirse por su excelencia académica acreditada y evaluada a nivel nacional e internacional.
+Ser reconocida por su impacto en la formación integral de líderes de acción positiva.</string>
 </resources>
