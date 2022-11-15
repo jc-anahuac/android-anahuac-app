@@ -11,6 +11,6 @@ public class BachelorDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bachelor_detail);
+        setContentView(R.layout.fragment_bachelor_profile);
     }
 }

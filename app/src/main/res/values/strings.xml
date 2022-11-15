@@ -9,10 +9,13 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
     <string name="perfil">Perfíl</string>
     <string name="activities">Actividades</string>
     <string name="studyplan">Plan de Estudios</string>
+    <string name="title_activities">Actividades de un Diseñador Multimedia</string>
+    <string name="title_studyplan">Plan de Estudios de Diseño Multimedia</string>
     <string name="perfil_de_disenador">Perfil de un Diseñador Multimedia</string>
     <string name="descripcion_perfil">Al ser un diseñador multimedia, estarás rodeado de diferentes y nuevas tecnologías emergentes sobre todo digitales, en dónde puedas ejercer y culminar tu creatividad para diseñar diferentes necesidades digitales. Si eres alguien al quién le apasiona la tecnología, junto con el diseño, esto es para ti.</string>
+    <string name="descripcion_activities">Manejarás herramientas de diseño cómo software de diseño vectorial, software para realizar animaciones tanto 2D cómo 3D, herramientas para producir contenido audiovisual y software compilador para realizar programación de cáracter front-end.</string>
     <string name="contact_guide">Contacta a un asesor</string>
-
+    <string name="list_studyplan">\n Modelado 3D \n Animación 2D \n Animación 3D \n Diseño UX \n Diseño UI \n Diseño de Información \n Diseño de Videojuegos \n Programación Multimedia \n Programación Apps. Móviles \n Aspectos Legales del Diseño \n Diseño de Infografía \n Dibujo Geometríco \n y más...</string>
 
     <string name="txt_escuelas">Escuela de Biotecnologia</string>
 
