@@ -25,22 +25,56 @@
                 android:backgroundTint="@color/color_primary"
                 android:scaleType="centerCrop"/>
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bn_BottomNavigation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:menu="@menu/menu_bachelor"
-                app:itemIconTint="@color/white"
-                app:itemTextColor="@color/white"
-                app:itemBackground="@color/color_primary"
-                app:layout_constraintTop_toBottomOf="@id/bachelorHeader"/>
 
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_TableDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/color_primary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bachelorHeader"
+                app:layout_constraintVertical_bias="0.0"
+                app:tabIconTint="@color/selector"
+                app:tabIndicatorColor="@color/white"
+                app:tabTextColor="@color/white">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/ic_baseline_account_circle_24"
+                    android:text="@string/perfil"
+                    app:itemBackground="@color/color_primary"
+                    app:itemIconTint="@color/white"
+                    app:itemTextColor="@color/white" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/ic_baseline_assignment_24"
+                    android:text="@string/activities"
+                    app:itemBackground="@color/color_primary"
+                    app:itemIconTint="@color/white"
+                    app:itemTextColor="@color/white" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/ic_baseline_assessment_24"
+                    android:text="@string/studyplan"
+                    app:itemBackground="@color/color_primary"
+                    app:itemIconTint="@color/white"
+                    app:itemTextColor="@color/white" />
+
+            </com.google.android.material.tabs.TabLayout>
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/vp_details"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:layout_constraintTop_toBottomOf="@id/bn_BottomNavigation"
+                app:layout_constraintTop_toBottomOf="@id/tl_TableDetail"
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
