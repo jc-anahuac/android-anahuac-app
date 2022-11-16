@@ -21,4 +21,7 @@
     <dimen name="carousel_us_mission">210dp</dimen>
     <dimen name="font_size_mission_title">20sp</dimen>
     <dimen name="font_size_body">16sp</dimen>
+
+    <dimen name="cero_dp">0dp</dimen>
+    <dimen name="carousel_latente">65dp</dimen>
 </resources>
