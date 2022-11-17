@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Anahuac"
         tools:targetApi="31">
         <activity
-            android:name=".activities.AboutActivity"
+            android:name=".activities.UsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
