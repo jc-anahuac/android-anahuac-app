@@ -24,8 +24,8 @@ public class BachelorDetailAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        if (position==1) return new BachelorProfileFragment();
-        else if (position==2) return new BachelorActivitiesFragment();
+        if (position==0) return new BachelorProfileFragment();
+        else if (position==1) return new BachelorActivitiesFragment();
         else return new BachelorStudyFragment();
     }
 
