@@ -2,23 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_short"
+    android:id="@+id/confe_container"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
-        android:id="@+id/tv_name"
+        android:id="@+id/iv_name"
         android:layout_width="@dimen/carousel_latente"
         android:layout_height="@dimen/carousel_latente"
-        android:src="@drawable/alex_salmar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginHorizontal="@dimen/margin_large"/>
+        android:layout_marginHorizontal="@dimen/margin_default"
+        android:src="@drawable/alex_salmar" />
 
     <TextView
+        android:id="@+id/tv_name"
         android:layout_width="@dimen/cero_dp"
         android:layout_height="wrap_content"
         android:text="@string/alex_salmar"
-        app:layout_constraintTop_toBottomOf="@id/tv_name"
-        app:layout_constraintStart_toStartOf="@id/tv_name"
-        app:layout_constraintEnd_toEndOf="@id/tv_name"/>
+        app:layout_constraintTop_toBottomOf="@id/iv_name"
+        app:layout_constraintStart_toStartOf="@id/iv_name"
+        app:layout_constraintEnd_toEndOf="@id/iv_name"
+        android:lines="2"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
