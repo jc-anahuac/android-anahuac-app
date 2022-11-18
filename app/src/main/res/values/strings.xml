@@ -9,10 +9,13 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
     <string name="perfil">Perfíl</string>
     <string name="activities">Actividades</string>
     <string name="studyplan">Plan de Estudios</string>
+    <string name="title_activities">Actividades de un Diseñador Multimedia</string>
+    <string name="title_studyplan">Plan de Estudios de Diseño Multimedia</string>
     <string name="perfil_de_disenador">Perfil de un Diseñador Multimedia</string>
     <string name="descripcion_perfil">Al ser un diseñador multimedia, estarás rodeado de diferentes y nuevas tecnologías emergentes sobre todo digitales, en dónde puedas ejercer y culminar tu creatividad para diseñar diferentes necesidades digitales. Si eres alguien al quién le apasiona la tecnología, junto con el diseño, esto es para ti.</string>
+    <string name="descripcion_activities">Manejarás herramientas de diseño cómo software de diseño vectorial, software para realizar animaciones tanto 2D cómo 3D, herramientas para producir contenido audiovisual y software compilador para realizar programación de cáracter front-end.</string>
     <string name="contact_guide">Contacta a un asesor</string>
-
+    <string name="list_studyplan">\n Modelado 3D \n Animación 2D \n Animación 3D \n Diseño UX \n Diseño UI \n Diseño de Información \n Diseño de Videojuegos \n Programación Multimedia \n Programación Apps. Móviles \n Aspectos Legales del Diseño \n Diseño de Infografía \n Dibujo Geometríco \n y más...</string>
 
     <string name="txt_escuelas">Escuela de Biotecnologia</string>
 
@@ -25,6 +28,34 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
     <string name="ing">ING. JOSÉ CARDENAS</string>
     <string name="info">PARA MAYOR INFORMACIÓN</string>
     <string name="paginaweb">CONSULTE LA PÁGINA\n OFICIAL DE LA UNIVERSIDAD. www.anahuac.mx</string>
+    <string name="txt_titulo_latente">CONGRESO LATENTE 9A EDICIÓN</string>
+    <string name="txt_latente_congreso">El Congreso Latente 9a Edición es un congreso internacional de diseño en dónde se fusionan todas las áreas de diseño para formar un universo colaborativo.</string>
+    <string name="conferencistas">Conferencistas</string>
+    <string name="talleres">TALLERES</string>
+    <string name="txt_boleto">ADQUIERE TU BOLETO</string>
+    <string name="btn_click_aqui">CLICK AQUÍ</string>
+    <string name="alex_salmar">Alex Salmar</string>
+    <string name="tony_rivera">Francisco Rivera</string>
+    <string name="felix_hdz">Félix Hernández</string>
+    <string name="irene_prz">Irene Peréz</string>
+    <string name="awesomebrosos">Awesomebrosos</string>
+    <string name="david_vzq">David Vázquez</string>
+    <string name="esme_mqz">Esmeralda Márquez</string>
+    <string name="general_std">General Studio</string>
+    <string name="rigging_3d">Rigging 3D</string>
+    <string name="dis_personaje">Diseño de Personaje</string>
+    <string name="dis_mueble">Diseño de Mueblería</string>
+    <string name="foto_concep">Fotografía Conceptual</string>
+    <string name="pintura_concep">Pintura Conceptual</string>
 
+    <string name="mission_title">MISIÓN</string>
+    <string name="mission_body">Contribuir a la formación integral de líderes de acción positiva y promover institucionalmente el desarrollo de la persona y de la sociedad, inspirados en los valores de humanismo cristiano.</string>
+    <string name="vision_title">VISIÓN</string>
+    <string name="vision_body">Ser la Universidad Internacional más reconocida de Cancún y del Caribe.
+Estar entre las 3 principales Universidades Internacionales  de América Latina.
+Estar entre las 10 Universidades Internacionales Católicas  más reconocidas del mundo.
+Distinguirse por su excelencia académica acreditada y evaluada a nivel nacional e internacional.
+Ser reconocida por su impacto en la formación integral de líderes de acción positiva.</string>
+    <string name="timeline_title">LÍNEA DEL TIEMPO</string>
 
 </resources>

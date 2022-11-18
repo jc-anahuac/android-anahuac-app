@@ -1,9 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.LatenteHomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_latente"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_latente_img"
+                android:src="@drawable/ic_home_latente"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/titulo_latente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_titulo_latente"
+                android:layout_margin="@dimen/margin_default"
+                android:textAlignment="center"
+                android:textColor="@color/color_primary"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/img_latente"/>
+
+            <TextView
+                android:id="@+id/txt_latente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_latente_congreso"
+                android:layout_margin="@dimen/margin_default"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/titulo_latente"/>
+
+            <Button
+                android:id="@+id/btn_conocenos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:backgroundTint="@color/color_primary"
+                android:text="@string/conocenos"
+                app:layout_constraintTop_toBottomOf="@id/txt_latente"/>
+
+            <TextView
+                android:id="@+id/txt_conferencistas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginHorizontal="@dimen/margin_default"
+                android:text="@string/conferencistas"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/btn_conocenos"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_conferenicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_conferencistas"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_conferencistas"/>
+
+            <TextView
+                android:id="@+id/txt_talleres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginHorizontal="@dimen/margin_default"
+                android:text="@string/talleres"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/rv_conferenicas"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_talleres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_talleres"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_talleres"/>
+
+            <TextView
+                android:id="@+id/txt_boletos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_boleto"
+                android:layout_margin="@dimen/margin_default"
+                android:textAlignment="center"
+                android:textColor="@color/color_primary"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/rv_talleres"/>
+
+            <Button
+                android:id="@+id/btn_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:backgroundTint="@color/color_primary"
+                android:text="@string/btn_click_aqui"
+                app:layout_constraintTop_toBottomOf="@id/txt_boletos"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:itemTextColor="@color/black"
+        app:headerLayout="@layout/header_drawer_view"
+        app:menu="@menu/menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
