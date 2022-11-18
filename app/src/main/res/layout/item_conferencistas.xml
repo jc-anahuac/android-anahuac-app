@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
-        android:id="@+id/iv_name"
+        android:id="@+id/iv_name_con"
         android:layout_width="@dimen/carousel_latente"
         android:layout_height="@dimen/carousel_latente"
         app:layout_constraintTop_toTopOf="parent"
@@ -16,13 +16,13 @@
         android:src="@drawable/alex_salmar" />
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_name_con"
         android:layout_width="@dimen/cero_dp"
         android:layout_height="wrap_content"
         android:text="@string/alex_salmar"
-        app:layout_constraintTop_toBottomOf="@id/iv_name"
-        app:layout_constraintStart_toStartOf="@id/iv_name"
-        app:layout_constraintEnd_toEndOf="@id/iv_name"
+        app:layout_constraintTop_toBottomOf="@id/iv_name_con"
+        app:layout_constraintStart_toStartOf="@id/iv_name_con"
+        app:layout_constraintEnd_toEndOf="@id/iv_name_con"
         android:lines="2"
         android:textColor="@color/black"
         android:textAlignment="center"/>
