@@ -23,11 +23,11 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
     <string name="campus_description">Contamos con más de 60 licenciaturas, distribuidos los diferentes campus que tenemos para ti.</string>
     <string name="version">VERSIÓN 1.0</string>
     <string name="creditos">CRÉDITOS</string>
-    <string name="alumnos">Nicole Henrichsen\nNicole Pineda\nBrian Uscanga\nKevin Arjona\nDiego A. Medina\nXimena Hernández\nBrenda Medina</string>
+    <string name="alumnos">NICOLE HENRICHSEN\nNICOLE PINEDA\nBRIAN USCANGA\nKEVIN ARJONA\nDIEGO A. MEDINA\nXIMENA HERNANDEZ\nBRENDA MEDINA</string>
     <string name="consultor">CONSULTOR</string>
     <string name="ing">ING. JOSÉ CARDENAS</string>
     <string name="info">PARA MAYOR INFORMACIÓN</string>
-    <string name="paginaweb">CONSULTE LA PÁGINA\n OFICIAL DE LA UNIVERSIDAD. www.anahuac.mx</string>
+    <string name="paginaweb">CONSULTE LA PÁGINA\n OFICIAL DE LA \n UNIVERSIDAD.\n www.anahuac.mx</string>
     <string name="txt_titulo_latente">CONGRESO LATENTE 9A EDICIÓN</string>
     <string name="txt_latente_congreso">El Congreso Latente 9a Edición es un congreso internacional de diseño en dónde se fusionan todas las áreas de diseño para formar un universo colaborativo.</string>
     <string name="conferencistas">Conferencistas</string>
@@ -57,5 +57,6 @@ Estar entre las 10 Universidades Internacionales Católicas  más reconocidas de
 Distinguirse por su excelencia académica acreditada y evaluada a nivel nacional e internacional.
 Ser reconocida por su impacto en la formación integral de líderes de acción positiva.</string>
     <string name="timeline_title">LÍNEA DEL TIEMPO</string>
+    <string name="finaltexto">DESARROLLADO POR LA LICENCIATURA DE DISEÑO MULTIMEDIA\nTODOS LOS DERECHOS RESERVADOS.ⓒ 2022.</string>
 
 </resources>

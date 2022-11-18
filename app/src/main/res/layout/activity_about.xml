@@ -34,7 +34,7 @@
                 android:gravity="center"
                 android:text="@string/version"
                 android:textColor="@color/color_version"
-                android:textStyle="bold" />
+                />
 
 
             <TextView
@@ -51,12 +51,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/alumnos"
-                android:lineSpacingExtra="4dp"/>
+                android:lineSpacingExtra="4dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="@string/consultor"
                 android:textColor="@color/color_primary"
@@ -65,22 +67,33 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/ing" />
+                android:text="@string/ing"
+                android:textStyle="bold
+"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="20dp"
+                android:layout_margin="10dp"
                 android:text="@string/info"
                 android:textColor="@color/color_primary"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/margin_pagina"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/paginaweb"/>
+                android:text="@string/paginaweb"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/finaltexto"
+                android:gravity="center"
+                android:textSize="8dp"
+                android:layout_margin="86dp"/>
+
         </LinearLayout>
     </ScrollView>
 
