@@ -23,7 +23,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
 
-
             <TextView
                 android:id="@+id/titulo_latente"
                 android:layout_width="match_parent"
@@ -71,7 +70,10 @@
                 android:id="@+id/carrousel_conferenicas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/txt_conferencistas"/>
+                app:layout_constraintTop_toBottomOf="@id/txt_conferencistas"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_conferencistas"/>
 
             <TextView
                 android:id="@+id/txt_talleres"
@@ -89,7 +91,10 @@
                 android:id="@+id/carrousel_talleres"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/txt_talleres"/>
+                app:layout_constraintTop_toBottomOf="@id/txt_talleres"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_talleres"/>
 
             <TextView
                 android:id="@+id/txt_boletos"
