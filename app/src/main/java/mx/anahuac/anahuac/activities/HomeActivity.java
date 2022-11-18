@@ -22,6 +22,7 @@ import mx.anahuac.anahuac.R;
 import mx.anahuac.anahuac.adapters.CampusGalleryAdapter;
 import mx.anahuac.anahuac.adapters.HomeHeaderAdapter;
 import mx.anahuac.anahuac.adapters.LicenciaturasAdapter;
+import mx.anahuac.anahuac.adapters.UsGalleryAdapter;
 import mx.anahuac.anahuac.models.Licenciatura;
 
 public class HomeActivity extends AppCompatActivity implements LicenciaturasAdapter.LicenciaturaListener {
@@ -49,11 +50,13 @@ public class HomeActivity extends AppCompatActivity implements LicenciaturasAdap
         viewPagerCampus = findViewById(R.id.vp_campus);
         campusIndicator = findViewById(R.id.campus_indicator);
 
+
         viewPager.setAdapter(new HomeHeaderAdapter(getSupportFragmentManager()));
         wormDotsIndicator.attachTo(viewPager);
 
         viewPagerCampus.setAdapter(new CampusGalleryAdapter(getSupportFragmentManager()));
         campusIndicator.attachTo(viewPagerCampus);
+
 
         rvLicenciaturas.setAdapter(new LicenciaturasAdapter(Licenciatura.getLicenciaturas(), this));
 
@@ -106,7 +109,7 @@ public class HomeActivity extends AppCompatActivity implements LicenciaturasAdap
     }
 
     private void goNosotros(){
-        Intent intent = new Intent(this, AboutActivity.class);
+        Intent intent = new Intent(this, UsActivity.class);
         startActivity(intent);
     }
 
