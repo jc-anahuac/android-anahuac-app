@@ -15,6 +15,10 @@
 
 
 
+
     <dimen name="item_lice_width">130dp</dimen>
     <dimen name="item_lic_height">220dp</dimen>
+
+
+    <dimen name="margin_pagina">10dp</dimen>
 </resources>
