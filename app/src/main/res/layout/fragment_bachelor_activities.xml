@@ -7,109 +7,55 @@
     tools:context=".activities.BachelorDetailActivity"
     android:id="@+id/layout_fragment_activities">
 
-    <ScrollView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+
+        <TextView
+            android:id="@+id/h1_activities"
+            android:textSize="@dimen/h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activities"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/color_primary"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/p_activities"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/h1_activities"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/descripcion_activities"
+            android:layout_margin="@dimen/margin_default"
+            android:lineSpacingExtra="@dimen/margin_shorter"/>
 
-            <ImageView
-                android:id="@+id/bachelorHeader"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/diseno_multimedia"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:backgroundTint="@color/color_primary"
-                android:scaleType="centerCrop"/>
+        <ImageView
+            android:id="@+id/iv_activities"
+            app:layout_constraintTop_toBottomOf="@id/p_activities"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/margin_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/diseno_activity"/>
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tl_TableDetail"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintTop_toBottomOf="@id/bachelorHeader"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:backgroundTint="@color/color_primary"
-                app:tabIconTint="@color/selector"
-                app:tabIndicatorColor="@color/white"
-                app:tabTextColor="@color/white"
-                >
+        <Button
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_guide"
+            android:backgroundTint="@color/color_primary"/>
 
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:icon="@drawable/ic_baseline_account_circle_24"
-                    android:text="@string/perfil"
-                    app:itemIconTint="@color/white"
-                    app:itemTextColor="@color/white"
-                    app:itemBackground="@color/color_primary"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:icon="@drawable/ic_baseline_assignment_24"
-                    android:text="@string/activities"
-                    app:itemIconTint="@color/white"
-                    app:itemTextColor="@color/white"
-                    app:itemBackground="@color/color_primary"/>
-
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:icon="@drawable/ic_baseline_assessment_24"
-                    android:text="@string/studyplan"
-                    app:itemIconTint="@color/white"
-                    app:itemTextColor="@color/white"
-                    app:itemBackground="@color/color_primary"/>
-
-            </com.google.android.material.tabs.TabLayout>
-
-            <TextView
-                android:id="@+id/h1_activities"
-                android:textSize="@dimen/h1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_activities"
-                app:layout_constraintTop_toBottomOf="@id/tl_TableDetail"
-                android:layout_margin="@dimen/margin_default"
-                app:layout_constraintStart_toStartOf="parent"
-                android:textColor="@color/color_primary"
-                android:textStyle="bold"
-                android:textAllCaps="true"/>
-
-            <TextView
-                android:id="@+id/p_activities"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/h1_activities"
-                app:layout_constraintStart_toStartOf="parent"
-                android:text="@string/descripcion_activities"
-                android:layout_margin="@dimen/margin_default"/>
-
-            <ImageView
-                android:id="@+id/iv_activities"
-                app:layout_constraintTop_toBottomOf="@id/p_activities"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_margin="@dimen/margin_default"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/diseno_activity"/>
-
-            <Button
-                android:layout_margin="@dimen/margin_default"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/iv_activities"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/contact_guide"
-                android:backgroundTint="@color/color_primary"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
