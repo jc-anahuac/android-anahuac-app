@@ -5,14 +5,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import mx.anahuac.anahuac.R;
-import mx.anahuac.anahuac.adapters.BachelorListAdapter;
-import mx.anahuac.anahuac.adapters.LatenteListAdapter;
+import mx.anahuac.anahuac.adapters.ConferencistasAdapter;
+import mx.anahuac.anahuac.adapters.TalleresAdapter;
 import mx.anahuac.anahuac.models.Conferencistas;
 import mx.anahuac.anahuac.models.Talleres;
 
@@ -74,12 +72,10 @@ public class LatenteHomeActivity extends AppCompatActivity {
         listTalleres.add(c7);
         listTalleres.add(c8);
 
-        rvConferencias.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL, false));
-        LatenteListAdapter adapter = new LatenteListAdapter(listConferencia);
+        ConferencistasAdapter adapter = new ConferencistasAdapter(listConferencia);
         rvConferencias.setAdapter(adapter);
 
-        rvTalleres.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL, false));
-        LatenteListAdapter adapter = new LatenteListAdapter(listTalleres);
-        rvTalleres.setAdapter(adapter);
+        TalleresAdapter talleresAdapter = new TalleresAdapter(listTalleres);
+        rvTalleres.setAdapter(talleresAdapter);
     }
 }
