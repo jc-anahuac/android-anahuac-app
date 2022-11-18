@@ -10,7 +10,7 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
     <string name="activities">Actividades</string>
     <string name="studyplan">Plan de Estudios</string>
     <string name="title_activities">Actividades de un Diseñador Multimedia</string>
-    <string name="title_studyplan">Plan de Estudios de Diseño Multimedia</string>
+    <string name="title_studyplan">Plan de Estudios de \nDiseño Multimedia</string>
     <string name="perfil_de_disenador">Perfil de un Diseñador Multimedia</string>
     <string name="descripcion_perfil">Al ser un diseñador multimedia, estarás rodeado de diferentes y nuevas tecnologías emergentes sobre todo digitales, en dónde puedas ejercer y culminar tu creatividad para diseñar diferentes necesidades digitales. Si eres alguien al quién le apasiona la tecnología, junto con el diseño, esto es para ti.</string>
     <string name="descripcion_activities">Manejarás herramientas de diseño cómo software de diseño vectorial, software para realizar animaciones tanto 2D cómo 3D, herramientas para producir contenido audiovisual y software compilador para realizar programación de cáracter front-end.</string>
@@ -21,7 +21,13 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
 
     <string name="campus_title">Campus</string>
     <string name="campus_description">Contamos con más de 60 licenciaturas, distribuidos los diferentes campus que tenemos para ti.</string>
-
+    <string name="version">VERSIÓN 1.0</string>
+    <string name="creditos">CRÉDITOS</string>
+    <string name="alumnos">NICOLE HENRICHSEN\nNICOLE PINEDA\nBRIAN USCANGA\nKEVIN ARJONA\nDIEGO A. MEDINA\nXIMENA HERNANDEZ\nBRENDA MEDINA</string>
+    <string name="consultor">CONSULTOR</string>
+    <string name="ing">ING. JOSÉ CARDENAS</string>
+    <string name="info">PARA MAYOR INFORMACIÓN</string>
+    <string name="paginaweb">CONSULTE LA PÁGINA\n OFICIAL DE LA \n UNIVERSIDAD.\n www.anahuac.mx</string>
     <string name="txt_titulo_latente">CONGRESO LATENTE 9A EDICIÓN</string>
     <string name="txt_latente_congreso">El Congreso Latente 9a Edición es un congreso internacional de diseño en dónde se fusionan todas las áreas de diseño para formar un universo colaborativo.</string>
     <string name="conferencistas">Conferencistas</string>
@@ -51,4 +57,6 @@ Estar entre las 10 Universidades Internacionales Católicas  más reconocidas de
 Distinguirse por su excelencia académica acreditada y evaluada a nivel nacional e internacional.
 Ser reconocida por su impacto en la formación integral de líderes de acción positiva.</string>
     <string name="timeline_title">LÍNEA DEL TIEMPO</string>
+    <string name="finaltexto">DESARROLLADO POR LA LICENCIATURA DE DISEÑO MULTIMEDIA\nTODOS LOS DERECHOS RESERVADOS.ⓒ 2022.</string>
+
 </resources>

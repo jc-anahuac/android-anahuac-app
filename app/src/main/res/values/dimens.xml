@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_short">8dp</dimen>
+    <dimen name="margin_shorter">3dp</dimen>
     <dimen name="margin_default">16dp</dimen>
     <dimen name="margin_large">32dp</dimen>
     <dimen name="carousel_home_size">300dp</dimen>
@@ -12,7 +13,7 @@
     <dimen name="margin_medium">8dp</dimen>
     <dimen name="image_height">200dp</dimen>
     <dimen name="font_size_tittle">20sp</dimen>
-
+    <dimen name="margin_pagina">10dp</dimen>
     <dimen name="item_lice_width">130dp</dimen>
     <dimen name="item_lic_height">220dp</dimen>
 
@@ -26,4 +27,5 @@
 
     <dimen name="cero_dp">0dp</dimen>
     <dimen name="carousel_latente">65dp</dimen>
+
 </resources>

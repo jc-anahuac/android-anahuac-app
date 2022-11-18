@@ -4,17 +4,25 @@ import java.util.List;
 
 public class Escuela {
 
+    private String code;
     private String name;
     private int image;
 
     private List<Licenciatura> licenciaturaList;
 
-    public Escuela(String name, int image){
+    public Escuela(String name, int image, String code){
         this.name = name;
+        this.code = code;
         this.image = image;
     }
 
+    public void setCode(String code) {
+        this.code = code;
+    }
 
+    public String getCode() {
+        return code;
+    }
 
     public String getName() {
         return name;

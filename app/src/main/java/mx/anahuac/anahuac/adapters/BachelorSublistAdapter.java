@@ -11,37 +11,34 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import mx.anahuac.anahuac.R;
 import mx.anahuac.anahuac.activities.BachelorListActivity;
 import mx.anahuac.anahuac.activities.BachelorSubListActivity;
 import mx.anahuac.anahuac.models.Escuela;
+import mx.anahuac.anahuac.models.Licenciatura;
 
-public class BachelorListAdapter extends RecyclerView.Adapter<BachelorListAdapter.ViewHolder> {
+public class BachelorSublistAdapter extends RecyclerView.Adapter<BachelorSublistAdapter.ViewHolder> {
 
-    private ArrayList<Escuela> data;
+    private List<Licenciatura> data;
 
-    public BachelorListAdapter(ArrayList<Escuela> data ){this.data = data; }
+    public BachelorSublistAdapter(List<Licenciatura> data ){this.data = data; }
 
     @NonNull
     @Override
-    public BachelorListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public BachelorSublistAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_bachelor_item, parent, false);
-        return new BachelorListAdapter.ViewHolder(view);
+        return new BachelorSublistAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BachelorListAdapter.ViewHolder holder, int position) {
-        Escuela campus = data.get(position);
+    public void onBindViewHolder(@NonNull BachelorSublistAdapter.ViewHolder holder, int position) {
+        Licenciatura campus = data.get(position);
         holder.tvBachelorName.setText(campus.getName());
-        holder.ivBachelor.setImageResource(campus.getImage());
-        holder.ivBachelor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), BachelorSubListActivity.class);
-                view.getContext().startActivity(intent);
-            }
-        });
+        holder.ivBachelor.setImageResource(campus.getImageList());
+
+
 
 
     }
@@ -66,3 +63,7 @@ public class BachelorListAdapter extends RecyclerView.Adapter<BachelorListAdapte
     }
 
 }
+
+
+
+
