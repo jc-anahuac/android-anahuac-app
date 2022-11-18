@@ -24,10 +24,11 @@ public class BachelorSubListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bachelor_sub_list);
+        String code = getIntent().getStringExtra("code");
 
         rvLicenciaturas = findViewById(R.id.rv_licenciaturas);
 
-         List<Licenciatura> data = Licenciatura.getLicenciaturas();
+         List<Licenciatura> data = Licenciatura.getLicenciaturasBySchool(code);
          rvLicenciaturas.setAdapter(new BachelorSublistAdapter(data));
     }
 }

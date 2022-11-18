@@ -19,7 +19,8 @@
             android:src="@drawable/ic_escuela_biotecnologia"
             android:scaleType="centerCrop"
             android:layout_width="match_parent"
-            android:layout_height="100dp"/>
+            android:layout_height="@dimen/image_height"
+           />
 
         <View
             android:layout_width="match_parent"

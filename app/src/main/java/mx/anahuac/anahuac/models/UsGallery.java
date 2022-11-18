@@ -12,7 +12,6 @@ public class UsGallery {
 
     public void setImage(int image){this.image = image;};
 
-    public void setImage(int image){this.image = image;}
 
     public void setCode(String code) {
         this.code = code;

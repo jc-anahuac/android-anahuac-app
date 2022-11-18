@@ -26,7 +26,7 @@ public class BachelorListAdapter extends RecyclerView.Adapter<BachelorListAdapte
     @NonNull
     @Override
     public BachelorListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_bachelor_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_escuela_item, parent, false);
         return new BachelorListAdapter.ViewHolder(view);
     }
 
@@ -39,6 +39,7 @@ public class BachelorListAdapter extends RecyclerView.Adapter<BachelorListAdapte
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), BachelorSubListActivity.class);
+                intent.putExtra("code",campus.getCode());
                 view.getContext().startActivity(intent);
             }
         });
