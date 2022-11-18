@@ -394,15 +394,6 @@ public class Licenciatura {
 
 
 
-
-
-
-
-
-
-
-
-
         list.add(multimedia);
         list.add(grafico);
         list.add(modas);
@@ -468,29 +459,6 @@ public class Licenciatura {
 
         list.add(turint);
         list.add(inttour);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
