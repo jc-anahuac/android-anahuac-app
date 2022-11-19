@@ -27,5 +27,9 @@
 
     <dimen name="cero_dp">0dp</dimen>
     <dimen name="carousel_latente">65dp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="margin_huge">40dp</dimen>
+
 
 </resources>

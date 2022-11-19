@@ -28,10 +28,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_titulo_latente"
-                android:layout_margin="@dimen/margin_default"
-                android:textAlignment="center"
+                android:layout_marginTop="@dimen/margin_default"
+                android:layout_marginHorizontal="@dimen/margin_huge"                android:textAlignment="center"
                 android:textColor="@color/color_primary"
                 android:textStyle="bold"
+                android:textSize="@dimen/font_size_18"
                 app:layout_constraintTop_toBottomOf="@id/img_latente"/>
 
             <TextView
@@ -39,9 +40,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_latente_congreso"
-                android:layout_margin="@dimen/margin_default"
-                android:textAlignment="center"
+                android:layout_marginTop="@dimen/margin_default"
+                android:layout_marginHorizontal="@dimen/margin_huge"                android:textAlignment="center"
                 android:textColor="@color/black"
+                android:textSize="@dimen/font_size_body"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/titulo_latente"/>
 
@@ -49,9 +51,12 @@
                 android:id="@+id/btn_conocenos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_large"
+                android:layout_marginVertical="@dimen/margin_default"
+                android:layout_marginHorizontal="@dimen/margin_huge"
                 android:backgroundTint="@color/color_primary"
                 android:text="@string/conocenos"
+                android:textSize="@dimen/font_size_18"
+                android:onClick="buttonInsta"
                 app:layout_constraintTop_toBottomOf="@id/txt_latente"/>
 
             <TextView
@@ -63,6 +68,7 @@
                 android:text="@string/conferencistas"
                 android:textAllCaps="true"
                 android:textStyle="bold"
+                android:textSize="@dimen/font_size_18"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toBottomOf="@id/btn_conocenos"/>
 
@@ -79,11 +85,11 @@
                 android:id="@+id/txt_talleres"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_large"
                 android:layout_marginHorizontal="@dimen/margin_default"
                 android:text="@string/talleres"
                 android:textAllCaps="true"
                 android:textStyle="bold"
+                android:textSize="@dimen/font_size_18"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toBottomOf="@id/rv_conferenicas"/>
 
@@ -101,19 +107,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_boleto"
-                android:layout_margin="@dimen/margin_default"
-                android:textAlignment="center"
+                android:layout_marginTop="@dimen/margin_default"
+                android:layout_marginHorizontal="@dimen/margin_huge"                android:textAlignment="center"
                 android:textColor="@color/color_primary"
                 android:textStyle="bold"
+                android:textSize="@dimen/font_size_18"
                 app:layout_constraintTop_toBottomOf="@id/rv_talleres"/>
 
             <Button
                 android:id="@+id/btn_click"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_default"
+                android:layout_marginVertical="@dimen/margin_default"
+                android:layout_marginHorizontal="@dimen/margin_huge"
                 android:backgroundTint="@color/color_primary"
                 android:text="@string/btn_click_aqui"
+                android:textSize="@dimen/font_size_18"
+                android:onClick="buttonInsta"
                 app:layout_constraintTop_toBottomOf="@id/txt_boletos"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
