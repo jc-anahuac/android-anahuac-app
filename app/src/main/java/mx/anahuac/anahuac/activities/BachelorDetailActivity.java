@@ -16,6 +16,8 @@ import mx.anahuac.anahuac.adapters.BachelorDetailAdapter;
 
 public class BachelorDetailActivity extends AppCompatActivity {
 
+    Button contact;
+
     ViewPager viewPagerBachelorDetail;
     TabLayout tabLayout;
 
@@ -23,11 +25,19 @@ public class BachelorDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bachelor_detail);
+        contact = findViewById(R.id.btn_contact_activities);
 
 
         viewPagerBachelorDetail = findViewById(R.id.vp_details);
         tabLayout = findViewById(R.id.tl_TableDetail);
         viewPagerBachelorDetail.setAdapter(new BachelorDetailAdapter(getSupportFragmentManager()));
+
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goLink("https://www.anahuac.mx/cancun/contacto");
+            }
+        });
 
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -56,6 +66,11 @@ public class BachelorDetailActivity extends AppCompatActivity {
             @Override
             public void onPageScrollStateChanged(int state) {}
         });
+    }
+
+    private void goLink(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
 }
 
