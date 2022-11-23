@@ -3,7 +3,11 @@ package mx.anahuac.anahuac.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -20,9 +24,11 @@ public class BachelorDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bachelor_detail);
 
+
         viewPagerBachelorDetail = findViewById(R.id.vp_details);
         tabLayout = findViewById(R.id.tl_TableDetail);
         viewPagerBachelorDetail.setAdapter(new BachelorDetailAdapter(getSupportFragmentManager()));
+
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -51,6 +57,5 @@ public class BachelorDetailActivity extends AppCompatActivity {
             public void onPageScrollStateChanged(int state) {}
         });
     }
-
-
 }
+
