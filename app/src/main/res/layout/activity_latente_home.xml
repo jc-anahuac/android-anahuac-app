@@ -56,6 +56,7 @@
                 android:backgroundTint="@color/color_primary"
                 android:text="@string/conocenos"
                 android:textSize="@dimen/font_size_18"
+                android:textColor="@color/white"
                 android:onClick="buttonInsta"
                 app:layout_constraintTop_toBottomOf="@id/txt_latente"/>
 
@@ -123,6 +124,7 @@
                 android:backgroundTint="@color/color_primary"
                 android:text="@string/btn_click_aqui"
                 android:textSize="@dimen/font_size_18"
+                android:textColor="@color/white"
                 android:onClick="buttonInsta"
                 app:layout_constraintTop_toBottomOf="@id/txt_boletos"/>
 

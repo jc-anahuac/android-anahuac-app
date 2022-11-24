@@ -50,7 +50,7 @@ public class LatenteHomeActivity extends AppCompatActivity {
         );
         Conferencistas c5 = new Conferencistas(
                 R.drawable.alex_salmar,
-                "Studio Dracma"
+                "Studio Drama"
         );
         Conferencistas c6 = new Conferencistas(
                 R.drawable.tony_rivera,
@@ -120,10 +120,12 @@ public class LatenteHomeActivity extends AppCompatActivity {
 
         TalleresAdapter talleresAdapter = new TalleresAdapter(listTalleres);
         rvTalleres.setAdapter(talleresAdapter);
+
     }
 
     public void buttonInsta (View view) {
         Intent buttonInsta = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/latente_cid/"));
         startActivity(buttonInsta);
     }
+
 }

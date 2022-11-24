@@ -61,6 +61,7 @@
         </activity>
         <activity
             android:name=".activities.LatenteHomeActivity"
+            android:label="@string/txt_titulo_latente"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
