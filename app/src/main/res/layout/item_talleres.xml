@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="@dimen/margin_default"
-        android:src="@drawable/rigging"
+        android:src="@drawable/lat_rigging_3d"
         android:layout_marginTop="@dimen/margin_short"/>
 
     <TextView
