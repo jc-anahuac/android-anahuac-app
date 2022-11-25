@@ -1,5 +1,6 @@
 package mx.anahuac.anahuac.activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -7,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -28,7 +30,6 @@ public class LatenteHomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_latente_home);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_arrow_back_ios_new_24);
-        LatenteHomeActivity.this.finish();
 
         rvConferencias = findViewById(R.id.rv_conferenicas);
         rvTalleres = findViewById(R.id.rv_talleres);
@@ -131,5 +132,11 @@ public class LatenteHomeActivity extends AppCompatActivity {
         startActivity(buttonInsta);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == android.R.id.home) {
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
