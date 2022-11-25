@@ -155,6 +155,27 @@
                 app:layout_constraintTop_toBottomOf="@id/rv_licenciaturas"
                 />
 
+            <TextView
+                android:id="@+id/tv_porque_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/porque_elegirnos"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/vp_campus"
+                android:layout_marginTop="@dimen/margin_default"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_porque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_short"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/tv_porque_title" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

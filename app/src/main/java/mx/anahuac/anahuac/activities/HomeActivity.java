@@ -20,9 +20,11 @@ import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator;
 
 import mx.anahuac.anahuac.R;
 import mx.anahuac.anahuac.adapters.CampusGalleryAdapter;
+import mx.anahuac.anahuac.adapters.CaracteristicasAdapter;
 import mx.anahuac.anahuac.adapters.HomeHeaderAdapter;
 import mx.anahuac.anahuac.adapters.LicenciaturasAdapter;
 import mx.anahuac.anahuac.adapters.UsGalleryAdapter;
+import mx.anahuac.anahuac.models.Caracteristica;
 import mx.anahuac.anahuac.models.Licenciatura;
 
 public class HomeActivity extends AppCompatActivity implements LicenciaturasAdapter.LicenciaturaListener {
@@ -33,6 +35,7 @@ public class HomeActivity extends AppCompatActivity implements LicenciaturasAdap
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private RecyclerView rvLicenciaturas;
+    private RecyclerView rvPorque;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -49,6 +52,7 @@ public class HomeActivity extends AppCompatActivity implements LicenciaturasAdap
         rvLicenciaturas = findViewById(R.id.rv_licenciaturas);
         viewPagerCampus = findViewById(R.id.vp_campus);
         campusIndicator = findViewById(R.id.campus_indicator);
+        rvPorque = findViewById(R.id.rv_porque);
 
 
         viewPager.setAdapter(new HomeHeaderAdapter(getSupportFragmentManager()));
@@ -59,6 +63,7 @@ public class HomeActivity extends AppCompatActivity implements LicenciaturasAdap
 
 
         rvLicenciaturas.setAdapter(new LicenciaturasAdapter(Licenciatura.getLicenciaturas(), this));
+        rvPorque.setAdapter(new CaracteristicasAdapter(Caracteristica.all()));
 
         ivMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,7 +134,7 @@ public class HomeActivity extends AppCompatActivity implements LicenciaturasAdap
     }
 
     private void goAcercade(){
-        Intent intent = new Intent(this, AboutAppActivity.class);
+        Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
     }
 
