@@ -26,6 +26,9 @@ public class LatenteHomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_latente_home);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_arrow_back_ios_new_24);
+        LatenteHomeActivity.this.finish();
 
         rvConferencias = findViewById(R.id.rv_conferenicas);
         rvTalleres = findViewById(R.id.rv_talleres);
@@ -127,5 +130,6 @@ public class LatenteHomeActivity extends AppCompatActivity {
         Intent buttonInsta = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/latente_cid/"));
         startActivity(buttonInsta);
     }
+
 
 }
