@@ -123,8 +123,9 @@ public class HomeActivity extends AppCompatActivity implements LicenciaturasAdap
         startActivity(intent);
     }
 
-    private void goLicencituraDetail(){
+    private void goLicencituraDetail(String code){
         Intent intent = new Intent(this, BachelorDetailActivity.class);
+        intent.putExtra("code", code);
         startActivity(intent);
     }
 
@@ -145,6 +146,6 @@ public class HomeActivity extends AppCompatActivity implements LicenciaturasAdap
 
     @Override
     public void onClickLicenciatura(Licenciatura licenciatura) {
-        goLicencituraDetail();
+        goLicencituraDetail(licenciatura.getCode());
     }
 }

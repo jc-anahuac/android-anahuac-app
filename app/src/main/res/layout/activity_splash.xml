@@ -11,7 +11,7 @@
         android:id="@+id/lottie_animation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:lottie_fileName="splash.json"
+        app:lottie_fileName="splash_final.json"
         app:lottie_autoPlay="true"
         app:lottie_loop="false"
         app:layout_constraintTop_toTopOf="parent"

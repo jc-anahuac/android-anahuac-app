@@ -20,6 +20,14 @@ public class Licenciatura {
     private int imageList;
     private String escuelaCode;
 
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
     public void setEscuelaCode(String escuelaCode) {
         this.escuelaCode = escuelaCode;
     }
@@ -133,24 +141,28 @@ public class Licenciatura {
 
         //ESCUELA DE DISEÑO
         Licenciatura grafico = new Licenciatura();
+        grafico.setCode("lic_grafico");
         grafico.setName("Diseño Grafico");
         grafico.setEscuelaCode("es_dis");
         grafico.setImageHome(R.drawable.lic_disenio);
         grafico.setImageList(R.drawable.lic_grafico);
 
         Licenciatura industrial = new Licenciatura();
+        industrial.setCode("lic_industrial");
         industrial.setName("Diseño Industrial");
         industrial.setEscuelaCode("es_dis");
         industrial.setImageHome(R.drawable.lic_disenio);
         industrial.setImageList(R.drawable.lic_industrial);
 
         Licenciatura multimedia = new Licenciatura();
+        multimedia.setCode("lic_multimedia");
         multimedia.setName("Diseño Multimedia");
         multimedia.setEscuelaCode("es_dis");
         multimedia.setImageHome(R.drawable.lic_disenio);
         multimedia.setImageList(R.drawable.lic_multimedia);
 
         Licenciatura modas = new Licenciatura();
+        modas.setCode("lic_modas");
         modas.setName("Diseño de Moda e Innovación");
         modas.setEscuelaCode("es_dis");
         modas.setImageHome(R.drawable.lic_disenio);
