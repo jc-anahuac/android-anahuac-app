@@ -37,69 +37,69 @@ public class LatenteHomeActivity extends AppCompatActivity {
         ArrayList<Talleres> listTalleres = new ArrayList<>();
 
         Conferencistas c1 = new Conferencistas(
-                R.drawable.alex_salmar,
+                R.drawable.lat_alex_salmar,
                 "Alex Salmar"
         );
         Conferencistas c2 = new Conferencistas(
-                R.drawable.tony_rivera,
+                R.drawable.lat_tony_rivera,
                 "Tony Rivera"
         );
         Conferencistas c3 = new Conferencistas(
-                R.drawable.felix_hdz,
+                R.drawable.lat_felix_hdz,
                 "Felix Hernandez"
         );
         Conferencistas c4 = new Conferencistas(
-                R.drawable.irene_prz,
+                R.drawable.lat_irene_prz,
                 "Irene Peréz"
         );
         Conferencistas c5 = new Conferencistas(
-                R.drawable.alex_salmar,
-                "Studio Drama"
+                R.drawable.lat_dracma_studio,
+                "Studio Dracma"
         );
         Conferencistas c6 = new Conferencistas(
-                R.drawable.tony_rivera,
-                "Puerta Left/David Vázquez"
+                R.drawable.lat_puerta_left,
+                "Puerta Left"
         );
         Conferencistas c7 = new Conferencistas(
-                R.drawable.felix_hdz,
-                "Esmeralda Merecoy"
+                R.drawable.lat_esmeralda_mqz,
+                "Esmeralda Marquez"
         );
         Conferencistas c8 = new Conferencistas(
-                R.drawable.irene_prz,
+                R.drawable.lat_general_studio,
                 "General Studio"
         );
 
         Talleres c9 = new Talleres(
-                R.drawable.rigging,
+                R.drawable.lat_rigging_3d,
                 "Rigging 3D"
         );
         Talleres c10 = new Talleres(
-                R.drawable.dis_mueble,
+                R.drawable.lat_dis_mueble,
                 "Diseño de Mueblería"
         );
         Talleres c11 = new Talleres(
-                R.drawable.foto_concept,
+                R.drawable.lat_foto_concept,
                 "Fotografía Conceptual"
         );
         Talleres c12 = new Talleres(
-                R.drawable.pintura_concept,
+                R.drawable.lat_pintura_concept,
                 "Pintura Conceptual"
         );
         Talleres c13 = new Talleres(
-                R.drawable.rigging,
+                R.drawable.lat_dis_personaje,
                 "Diseño de Personaje"
         );
         Talleres c14 = new Talleres(
-                R.drawable.dis_mueble,
+                R.drawable.lat_taller6,
                 "Taller 6"
         );
         Talleres c15 = new Talleres(
-                R.drawable.foto_concept,
-                "Taller 7"
+                R.drawable.lat_moda_susten,
+                "Moda Sustentable"
         );
         Talleres c16 = new Talleres(
-                R.drawable.foto_concept,
-                "Moda Sustentable"
+                R.drawable.lat_taller8,
+                "Taller 8"
         );
 
         listConferencia.add(c1);
