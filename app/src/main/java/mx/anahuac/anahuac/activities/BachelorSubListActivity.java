@@ -18,7 +18,6 @@ public class BachelorSubListActivity extends AppCompatActivity {
 
     RecyclerView rvLicenciaturas;
 
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -8,27 +8,39 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 import com.google.android.material.tabs.TabLayout;
 import mx.anahuac.anahuac.R;
 import mx.anahuac.anahuac.adapters.BachelorDetailAdapter;
+import mx.anahuac.anahuac.models.Licenciatura;
 
 public class BachelorDetailActivity extends AppCompatActivity {
 
     ViewPager viewPagerBachelorDetail;
     TabLayout tabLayout;
     ActionBar actionBar;
+    ImageView imageView;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bachelor_detail);
+        String code = getIntent().getStringExtra("code");
+        Licenciatura lic = Licenciatura.getLicenciaturaByCode(code);
+
+        imageView = findViewById(R.id.bachelorHeader);
+
+        if (lic != null) {
+            setTitle(lic.getName());
+            imageView.setImageResource(lic.getImageDetail());
+        }
 
 
         viewPagerBachelorDetail = findViewById(R.id.vp_details);
         tabLayout = findViewById(R.id.tl_TableDetail);
-        viewPagerBachelorDetail.setAdapter(new BachelorDetailAdapter(getSupportFragmentManager()));
+        viewPagerBachelorDetail.setAdapter(new BachelorDetailAdapter(getSupportFragmentManager(),code));
 
         actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);

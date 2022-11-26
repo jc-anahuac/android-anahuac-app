@@ -17,16 +17,24 @@ import mx.anahuac.anahuac.models.HomeHeader;
 
 public class BachelorDetailAdapter extends FragmentPagerAdapter {
 
-    public BachelorDetailAdapter(@NonNull FragmentManager fm) {
+    String code;
+
+    public BachelorDetailAdapter(@NonNull FragmentManager fm, String code) {
         super(fm);
+        this.code = code;
     }
 
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        if (position==0) return new BachelorProfileFragment();
-        else if (position==1) return new BachelorActivitiesFragment();
-        else return new BachelorStudyFragment();
+        Fragment fragment;
+        if (position==0) fragment = new BachelorProfileFragment();
+        else if (position==1) fragment = new BachelorActivitiesFragment();
+        else fragment = new BachelorStudyFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("code", code);
+        fragment.setArguments(bundle);
+        return fragment;
     }
 
     @Override

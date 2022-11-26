@@ -12,11 +12,11 @@ public class Licenciatura {
     private int imageDetail;
     private String about;
     private String urlVideo;
-    private String profile;
+    private int profile;
     private int imageProfile;
-    private String activity;
+    private int activity;
     private int imageActivity;
-    private String planEstudio;
+    private int planEstudio;
     private int imageList;
     private String escuelaCode;
 
@@ -76,11 +76,11 @@ public class Licenciatura {
         this.urlVideo = urlVideo;
     }
 
-    public String getProfile() {
+    public int getProfile() {
         return profile;
     }
 
-    public void setProfile(String profile) {
+    public void setProfile(int profile) {
         this.profile = profile;
     }
 
@@ -92,11 +92,11 @@ public class Licenciatura {
         this.imageProfile = imageProfile;
     }
 
-    public String getActivity() {
+    public int getActivity() {
         return activity;
     }
 
-    public void setActivity(String activity) {
+    public void setActivity(int activity) {
         this.activity = activity;
     }
 
@@ -108,11 +108,11 @@ public class Licenciatura {
         this.imageActivity = imageActivity;
     }
 
-    public String getPlanEstudio() {
+    public int getPlanEstudio() {
         return planEstudio;
     }
 
-    public void setPlanEstudio(String planEstudio) {
+    public void setPlanEstudio(int planEstudio) {
         this.planEstudio = planEstudio;
     }
 
@@ -122,6 +122,17 @@ public class Licenciatura {
 
     public int getImageList() {
         return imageList;
+    }
+
+    public static Licenciatura getLicenciaturaByCode(String code){
+        Licenciatura item = null;
+        for (Licenciatura lic: getLicenciaturas()){
+            if (lic.getCode().equals(code)){
+                item = lic;
+                break;
+            }
+        }
+        return item;
     }
 
     public static List<Licenciatura> getLicenciaturasBySchool(String code){
@@ -146,6 +157,12 @@ public class Licenciatura {
         grafico.setEscuelaCode("es_dis");
         grafico.setImageHome(R.drawable.lic_disenio);
         grafico.setImageList(R.drawable.lic_grafico);
+        grafico.setProfile(R.string.profile_grafico);
+        grafico.setImageProfile(R.drawable.diseno_multimedia_perfil);
+        grafico.setImageDetail(R.drawable.diseno_grafico);
+        grafico.setPlanEstudio(R.string.list_studyplan_grafico);
+        grafico.setActivity(R.string.descripcion_activities_grafico);
+        grafico.setImageActivity(R.drawable.diseno_grafico_activity);
 
         Licenciatura industrial = new Licenciatura();
         industrial.setCode("lic_industrial");
@@ -153,6 +170,12 @@ public class Licenciatura {
         industrial.setEscuelaCode("es_dis");
         industrial.setImageHome(R.drawable.lic_disenio);
         industrial.setImageList(R.drawable.lic_industrial);
+        industrial.setImageDetail(R.drawable.diseno_industrial);
+        industrial.setPlanEstudio(R.string.list_studyplan_industrial);
+        industrial.setActivity(R.string.descripcion_activities_industrial);
+        industrial.setProfile(R.string.profile_industrial);
+        industrial.setImageProfile(R.drawable.diseno_industrial_profile);
+        industrial.setImageActivity(R.drawable.diseno_industrial_activity);
 
         Licenciatura multimedia = new Licenciatura();
         multimedia.setCode("lic_multimedia");
@@ -160,6 +183,12 @@ public class Licenciatura {
         multimedia.setEscuelaCode("es_dis");
         multimedia.setImageHome(R.drawable.lic_disenio);
         multimedia.setImageList(R.drawable.lic_multimedia);
+        multimedia.setProfile(R.string.descripcion_perfil);
+        multimedia.setActivity(R.string.descripcion_activities);
+        multimedia.setPlanEstudio(R.string.list_studyplan);
+        multimedia.setImageProfile(R.drawable.diseno_multimedia_perfil);
+        multimedia.setImageActivity(R.drawable.diseno_activity);
+        multimedia.setImageDetail(R.drawable.diseno_multimedia);
 
         Licenciatura modas = new Licenciatura();
         modas.setCode("lic_modas");
@@ -167,6 +196,13 @@ public class Licenciatura {
         modas.setEscuelaCode("es_dis");
         modas.setImageHome(R.drawable.lic_disenio);
         modas.setImageList(R.drawable.lic_modas);
+        modas.setProfile(R.string.profile_modas);
+        modas.setActivity(R.string.descripcion_activities_modas);
+        modas.setImageDetail(R.drawable.diseno_modas);
+        modas.setPlanEstudio(R.string.list_studyplan_modas);
+        modas.setImageProfile(R.drawable.diseno_modas_profile);
+        modas.setImageActivity(R.drawable.diseno_modas_activity);
+
 
 
         //ESCUELA DE ARQUITECTURA
@@ -175,6 +211,13 @@ public class Licenciatura {
         arqui.setImageList(R.drawable.lic_multimedia);
         arqui.setName("Arquitectura");
         arqui.setEscuelaCode("es_arqui");
+        arqui.setCode("lic_arqui");
+        arqui.setImageDetail(R.drawable.arquitectura);
+        arqui.setImageProfile(R.drawable.arquitectura_profile);
+        arqui.setImageActivity(R.drawable.arquitectura_activities);
+        arqui.setProfile(R.string.profile_arquitectura);
+        arqui.setActivity(R.string.descripcion_activities_arquitectura);
+        arqui.setPlanEstudio(R.string.list_studyplan_arquitectura);
 
 
         //ESCUELA DE BIOTECNOLOGIA
@@ -183,6 +226,13 @@ public class Licenciatura {
         biotech.setImageList(R.drawable.lic_biotecnologia);
         biotech.setName("Biotecnología");
         biotech.setEscuelaCode("es_bio");
+        biotech.setCode("lic_bio");
+        biotech.setImageDetail(R.drawable.biotecnologia);
+        biotech.setImageProfile(R.drawable.biotecnologia_profile);
+        biotech.setImageActivity(R.drawable.biotecnologia_activities);
+        biotech.setProfile(R.string.profile_biotecnologia);
+        biotech.setActivity(R.string.descripcion_activities_biotecnologia);
+        biotech.setPlanEstudio(R.string.list_studyplan_biotecnologia);
 
 
         //ESCUELA DE DERECHO
@@ -191,12 +241,28 @@ public class Licenciatura {
         derecho.setImageList(R.drawable.lic_derecho);
         derecho.setName("Derecho");
         derecho.setEscuelaCode("es_der");
+        derecho.setCode("lic_der");
+        derecho.setImageDetail(R.drawable.derecho);
+        derecho.setImageProfile(R.drawable.derecho_profile);
+        derecho.setImageProfile(R.drawable.derecho_activities);
+        derecho.setProfile(R.string.profile_derecho);
+        derecho.setActivity(R.string.descripcion_activities_derecho);
+        derecho.setPlanEstudio(R.string.list_studyplan_derecho);
+
 
         Licenciatura relinter = new Licenciatura();
         relinter.setImageHome(R.drawable.lic_biotecnologia);
         relinter.setImageList(R.drawable.lic_relacionesinter);
         relinter.setName("Relaciones Internacionales");
         relinter.setEscuelaCode("es_der");
+        relinter.setCode("lic_relint");
+        relinter.setImageDetail(R.drawable.relinter);
+        relinter.setImageProfile(R.drawable.relinter_profile);
+        relinter.setImageActivity(R.drawable.relinter_activities);
+        relinter.setProfile(R.string.profile_relinter);
+        relinter.setActivity(R.string.descripcion_activities_relinter);
+        relinter.setPlanEstudio(R.string.list_studyplan_relinter);
+
 
 
         //ESCUELA DE FISIOTERAPIA
@@ -205,6 +271,13 @@ public class Licenciatura {
         fisio.setImageList(R.drawable.lic_fisio);
         fisio.setName("Fisioterapia");
         fisio.setEscuelaCode("es_fis");
+        fisio.setCode("lic_fisio");
+        fisio.setImageDetail(R.drawable.fisio);
+        fisio.setImageProfile(R.drawable.fisio_profile);
+        fisio.setImageActivity(R.drawable.fisio_activities);
+        fisio.setProfile(R.string.profile_fisio);
+        fisio.setActivity(R.string.profile_fisio);
+        fisio.setPlanEstudio(R.string.list_studyplan_fisio);
 
 
 
