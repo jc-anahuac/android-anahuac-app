@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,54 +7,61 @@
     tools:context=".activities.BachelorDetailActivity"
     android:id="@+id/layout_fragment_studyplan">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/h1_studyplan"
-                android:textSize="@dimen/h1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_studyplan"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_margin="@dimen/margin_default"
-                app:layout_constraintStart_toStartOf="parent"
-                android:textColor="@color/color_primary"
-                android:textStyle="bold"
-                android:textAllCaps="true"/>
-
-            <TextView
-                android:id="@+id/p_studyplan"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/h1_studyplan"
-                app:layout_constraintStart_toStartOf="parent"
-                android:text="@string/list_studyplan"
-                android:layout_margin="@dimen/margin_default"
-                android:singleLine="false"
-                android:lineSpacingExtra="@dimen/margin_short"/>
+                android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/btn_contact_study"
-                android:layout_margin="@dimen/margin_default"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/p_studyplan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/contact_guide"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/color_primary"/>
+                <TextView
+                    android:id="@+id/h1_studyplan"
+                    android:textSize="@dimen/h1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_studyplan"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textColor="@color/color_primary"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:paddingTop="@dimen/margin_default"
+                    android:paddingStart="@dimen/margin_default"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
+                <TextView
+                    android:id="@+id/p_studyplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/h1_studyplan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/list_studyplan"
+                    android:paddingBottom="@dimen/margin_huge"
+                    android:paddingStart="@dimen/margin_default"
+                    android:paddingTop="@dimen/margin_default"
+                    android:singleLine="false"
+                    android:lineSpacingExtra="@dimen/margin_short"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <Button
+                    android:id="@+id/btn_contact_study"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/p_studyplan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button"
+                    android:layout_marginBottom="500dp"
+                    android:text="@string/contact_guide"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/color_primary"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

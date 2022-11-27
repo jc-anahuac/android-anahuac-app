@@ -33,7 +33,7 @@ public class BachelorStudyFragment extends Fragment {
         Licenciatura lic = Licenciatura.getLicenciaturaByCode(getArguments().getString("code"));
 
         if (lic != null) {
-            textViewStudyTitle.setText("PLAN DE ESTUDIOS DE " + lic.getName());
+            textViewStudyTitle.setText("PLAN DE ESTUDIOS DE \n" + lic.getName());
             textViewStudyPlan.setText(lic.getPlanEstudio());
         }
 
