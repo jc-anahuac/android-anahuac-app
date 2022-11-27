@@ -263,8 +263,6 @@ public class Licenciatura {
         relinter.setActivity(R.string.descripcion_activities_relinter);
         relinter.setPlanEstudio(R.string.list_studyplan_relinter);
 
-
-
         //ESCUELA DE FISIOTERAPIA
         Licenciatura fisio = new Licenciatura();
         fisio.setImageHome(R.drawable.lic_fisio);
@@ -279,41 +277,71 @@ public class Licenciatura {
         fisio.setActivity(R.string.profile_fisio);
         fisio.setPlanEstudio(R.string.list_studyplan_fisio);
 
-
-
         //ESCUELA DE INGENIERIA
         Licenciatura engman = new Licenciatura();
         engman.setImageHome(R.drawable.lic_biotecnologia);
         engman.setImageList(R.drawable.lic_engineering);
         engman.setName("Engineering Management");
         engman.setEscuelaCode("es_ing");
+        engman.setCode("lic_engman");
+        engman.setImageDetail(R.drawable.eng_engman);
+        engman.setImageProfile(R.drawable.engman_profile);
+        engman.setImageActivity(R.drawable.engman_activities);
+        engman.setProfile(R.string.profile_engman);
+        engman.setActivity(R.string.descripcion_activities_engman);
+        engman.setPlanEstudio(R.string.list_studyplan_engman);
 
         Licenciatura ingamb = new Licenciatura();
         ingamb.setImageHome(R.drawable.lic_biotecnologia);
         ingamb.setImageList(R.drawable.lic_ingamb);
         ingamb.setName("Ingeniería Ambiental");
         ingamb.setEscuelaCode("es_ing");
+        ingamb.setCode("lic_ingamb");
+        ingamb.setImageDetail(R.drawable.ingamb);
+        ingamb.setImageProfile(R.drawable.ingamb_profile);
+        ingamb.setProfile(R.string.profile_ingamb);
+        ingamb.setActivity(R.string.descripcion_activities_ingamb);
+        ingamb.setPlanEstudio(R.string.list_studyplan_ingamb);
 
         Licenciatura ingciv = new Licenciatura();
         ingciv.setImageHome(R.drawable.lic_biotecnologia);
         ingciv.setImageList(R.drawable.lic_ingcivil);
         ingciv.setName("Ingeniería Civil");
         ingciv.setEscuelaCode("es_ing");
+        ingciv.setCode("lic_ingciv");
+        ingciv.setImageDetail(R.drawable.ingciv);
+        ingciv.setImageProfile(R.drawable.engman_profile);
+        ingciv.setImageActivity(R.drawable.inciv_activities);
+        ingciv.setProfile(R.string.profile_ingciv);
+        ingciv.setActivity(R.string.descripcion_activities_ingciv);
+        ingciv.setPlanEstudio(R.string.list_studyplan_ingciv);
 
         Licenciatura ingind = new Licenciatura();
         ingind.setImageHome(R.drawable.lic_biotecnologia);
         ingind.setImageList(R.drawable.lic_ingind);
-        ingind.setName("Ingeniería Industrial para la Dirección");
+        ingind.setName("Ingeniería Industrial para la \n Dirección");
         ingind.setEscuelaCode("es_ing");
-
+        ingind.setCode("lic_ingind");
+        ingind.setImageDetail(R.drawable.eng_engman);
+        ingind.setImageProfile(R.drawable.engman_profile);
+        ingind.setImageActivity(R.drawable.engman_activities);
+        ingind.setProfile(R.string.profile_engman);
+        ingind.setActivity(R.string.descripcion_activities_engman);
+        ingind.setPlanEstudio(R.string.list_studyplan_engman);
 
         //ESCUELA DE ARTES
         Licenciatura musica = new Licenciatura();
-        musica.setImageHome(R.drawable.lic_biotecnologia);
+        musica.setImageHome(R.drawable.lic_disenio);
         musica.setImageList(R.drawable.lic_musica);
         musica.setName("Música Contemporánea");
         musica.setEscuelaCode("es_artes");
-
+        musica.setCode("lic_musica");
+        musica.setImageDetail(R.drawable.musica);
+        musica.setImageProfile(R.drawable.musica_profile);
+        musica.setImageActivity(R.drawable.musica_activities);
+        musica.setProfile(R.string.profile_musica);
+        musica.setActivity(R.string.descripcion_activities_musica);
+        musica.setPlanEstudio(R.string.list_studyplan_musica);
 
         //ESCUELA DE COMUNICACION
         Licenciatura comunicacion = new Licenciatura();
@@ -321,30 +349,65 @@ public class Licenciatura {
         comunicacion.setImageList(R.drawable.lic_comu);
         comunicacion.setName("Comunicación");
         comunicacion.setEscuelaCode("es_comu");
+        comunicacion.setCode("lic_comunicacion");
+        comunicacion.setImageDetail(R.drawable.comunicacion);
+        comunicacion.setImageProfile(R.drawable.comunicacion_profile);
+        comunicacion.setImageActivity(R.drawable.comunicacion_activities);
+        comunicacion.setProfile(R.string.profile_comunicacion);
+        comunicacion.setActivity(R.string.descripcion_activities_comunicacion);
+        comunicacion.setPlanEstudio(R.string.list_studyplan_comunicacion);
 
         Licenciatura communication = new Licenciatura();
         communication.setImageHome(R.drawable.lic_biotecnologia);
         communication.setImageList(R.drawable.lic_comunication);
         communication.setName("Communication");
-        communication.setEscuelaCode("es_comu");
+        communication.setEscuelaCode("es_commu");
+        comunicacion.setCode("lic_communication");
+        comunicacion.setImageDetail(R.drawable.comunicacion);
+        comunicacion.setImageProfile(R.drawable.comunicacion_profile);
+        comunicacion.setImageActivity(R.drawable.comunicacion_activities);
+        comunicacion.setProfile(R.string.profile_comunicacion);
+        comunicacion.setActivity(R.string.descripcion_activities_comunicacion);
+        comunicacion.setPlanEstudio(R.string.list_studyplan_comunicacion);
 
         Licenciatura entretenimiento = new Licenciatura();
         entretenimiento.setImageHome(R.drawable.lic_biotecnologia);
         entretenimiento.setImageList(R.drawable.lic_entretenimiento);
         entretenimiento.setName("Dirección de Empresas de Entretenimiento");
         entretenimiento.setEscuelaCode("es_comu");
+        entretenimiento.setCode("lic_entretenimiento");
+        entretenimiento.setImageDetail(R.drawable.empentretenimiento);
+        entretenimiento.setImageProfile(R.drawable.entretenimiento_profile);
+        entretenimiento.setImageActivity(R.drawable.entretenimiento_activities);
+        entretenimiento.setProfile(R.string.profile_entretenimiento);
+        entretenimiento.setActivity(R.string.descripcion_activities_entretenimiento);
+        entretenimiento.setPlanEstudio(R.string.list_studyplan_entretenimiento);
 
         Licenciatura entertainment = new Licenciatura();
         entertainment.setImageHome(R.drawable.lic_biotecnologia);
         entertainment.setImageList(R.drawable.lic_entertainment);
         entertainment.setName("Entertainment Business Management");
         entertainment.setEscuelaCode("es_comu");
+        entretenimiento.setCode("lic_entertainment");
+        entretenimiento.setImageDetail(R.drawable.empentretenimiento);
+        entretenimiento.setImageProfile(R.drawable.entretenimiento_profile);
+        entretenimiento.setImageActivity(R.drawable.entretenimiento_activities);
+        entretenimiento.setProfile(R.string.profile_entretenimiento);
+        entretenimiento.setActivity(R.string.descripcion_activities_entretenimiento);
+        entretenimiento.setPlanEstudio(R.string.list_studyplan_entretenimiento);
 
         Licenciatura ingaudio = new Licenciatura();
         ingaudio.setImageHome(R.drawable.lic_biotecnologia);
         ingaudio.setImageList(R.drawable.lic_ingaudio);
         ingaudio.setName("Ingeniería en Audio");
         ingaudio.setEscuelaCode("es_comu");
+        ingaudio.setCode("lic_ingaudio");
+        ingaudio.setImageDetail(R.drawable.diseno_multimedia);
+        ingaudio.setImageProfile(R.drawable.ingaudio_profile);
+        ingaudio.setImageActivity(R.drawable.ingaudio_activities);
+        ingaudio.setProfile(R.string.profile_musica);
+        ingaudio.setActivity(R.string.descripcion_activities_musica);
+        ingaudio.setPlanEstudio(R.string.list_studyplan_musica);
 
 
         //ESCUELA DEL DEPORTE
@@ -353,13 +416,26 @@ public class Licenciatura {
         direcdep.setImageList(R.drawable.lic_direcdep);
         direcdep.setName("Dirección del Deporte");
         direcdep.setEscuelaCode("es_dep");
+        direcdep.setCode("lic_direcdep");
+        direcdep.setImageDetail(R.drawable.direcdep_profile);
+        direcdep.setImageProfile(R.drawable.direcdep_profile);
+        direcdep.setImageActivity(R.drawable.direcdep_activities);
+        direcdep.setProfile(R.string.profile_direcdep);
+        direcdep.setActivity(R.string.descripcion_activities_direcdep);
+        direcdep.setPlanEstudio(R.string.list_studyplan_direcdep);
 
         Licenciatura entdep = new Licenciatura();
         entdep.setImageHome(R.drawable.lic_biotecnologia);
         entdep.setImageList(R.drawable.lic_entrenamiento);
         entdep.setName("Entrenamiento e Innovación Deportiva");
         entdep.setEscuelaCode("es_dep");
-
+        entdep.setCode("lic_entdep");
+        entdep.setImageDetail(R.drawable.direcdep_profile);
+        entdep.setImageProfile(R.drawable.direcdep_profile);
+        entdep.setImageActivity(R.drawable.direcdep_activities);
+        entdep.setProfile(R.string.profile_direcdep);
+        entdep.setActivity(R.string.descripcion_activities_direcdep);
+        entdep.setPlanEstudio(R.string.list_studyplan_direcdep);
 
         //ESCUELA DE GASTRONOMIA
         Licenciatura direcrest = new Licenciatura();
@@ -367,18 +443,39 @@ public class Licenciatura {
         direcrest.setImageList(R.drawable.lic_direccionrest);
         direcrest.setName("Dirección de Restaurantes");
         direcrest.setEscuelaCode("es_gast");
+        direcrest.setCode("lic_direcrest");
+        direcrest.setImageDetail(R.drawable.direccionrest);
+        direcrest.setImageProfile(R.drawable.direccionrest_profile);
+        direcrest.setImageActivity(R.drawable.direccionrest_activities);
+        direcrest.setProfile(R.string.profile_direccionrest);
+        direcrest.setActivity(R.string.descripcion_activities_direccionrest);
+        direcrest.setPlanEstudio(R.string.list_studyplan_direccionrest);
 
         Licenciatura gastronomia = new Licenciatura();
         gastronomia.setImageHome(R.drawable.lic_biotecnologia);
         gastronomia.setImageList(R.drawable.lic_gastro);
         gastronomia.setName("Gastronomia");
         gastronomia.setEscuelaCode("es_gast");
+        gastronomia.setCode("lic_gastronomia");
+        gastronomia.setImageDetail(R.drawable.gastronomia);
+        gastronomia.setImageProfile(R.drawable.gastronomia_profile);
+        gastronomia.setImageActivity(R.drawable.direccionrest_activities);
+        gastronomia.setProfile(R.string.profile_gastronomia);
+        gastronomia.setActivity(R.string.descripcion_activities_gastronomia);
+        gastronomia.setPlanEstudio(R.string.list_studyplan_gastronomia);
 
         Licenciatura gastronomy = new Licenciatura();
         gastronomy.setImageHome(R.drawable.lic_biotecnologia);
         gastronomy.setImageList(R.drawable.lic_gastronomy);
         gastronomy.setName("Gastronomy");
         gastronomy.setEscuelaCode("es_gast");
+        gastronomy.setCode("lic_gastronomy");
+        gastronomy.setImageDetail(R.drawable.gastronomia);
+        gastronomy.setImageProfile(R.drawable.gastronomia_profile);
+        gastronomy.setImageActivity(R.drawable.direccionrest_activities);
+        gastronomy.setProfile(R.string.profile_gastronomia);
+        gastronomy.setActivity(R.string.descripcion_activities_gastronomia);
+        gastronomy.setPlanEstudio(R.string.list_studyplan_gastronomia);
 
 
         //ESCUELA DE GOBIERNO
@@ -387,6 +484,13 @@ public class Licenciatura {
         admgob.setImageList(R.drawable.lic_gob);
         admgob.setName("Administración Pública y Gobierno");
         admgob.setEscuelaCode("es_gob");
+        admgob.setCode("lic_admgob");
+        admgob.setImageDetail(R.drawable.admgob);
+        admgob.setImageProfile(R.drawable.admgob_profile);
+        admgob.setImageActivity(R.drawable.admgob_activities);
+        admgob.setProfile(R.string.profile_admgob);
+        admgob.setActivity(R.string.descripcion_activities_admgob);
+        admgob.setPlanEstudio(R.string.list_studyplan_admgob);
 
 
         //ESCUELA DE HOTELERIA
@@ -395,18 +499,39 @@ public class Licenciatura {
         direchot.setImageList(R.drawable.lic_direchot);
         direchot.setName("Dirección Internacional de Hoteles");
         direchot.setEscuelaCode("es_hotel");
+        direchot.setCode("lic_direchot");
+        direchot.setImageDetail(R.drawable.direchot);
+        direchot.setImageProfile(R.drawable.direchot_profile);
+        direchot.setImageActivity(R.drawable.direchot_activities);
+        direchot.setProfile(R.string.profile_direchot);
+        direchot.setActivity(R.string.descripcion_activities_direchot);
+        direchot.setPlanEstudio(R.string.list_studyplan_direchot);
 
         Licenciatura gesthot = new Licenciatura();
         gesthot.setImageHome(R.drawable.lic_biotecnologia);
         gesthot.setImageList(R.drawable.lic_gesthot);
         gesthot.setName("Gestión Hotelera Internacional");
         gesthot.setEscuelaCode("es_hotel");
+        gesthot.setCode("lic_gesthot");
+        gesthot.setImageDetail(R.drawable.direchot);
+        gesthot.setImageProfile(R.drawable.direchot_profile);
+        gesthot.setImageActivity(R.drawable.direchot_activities);
+        gesthot.setProfile(R.string.profile_gesthot);
+        gesthot.setActivity(R.string.descripcion_activities_direchot);
+        gesthot.setPlanEstudio(R.string.list_studyplan_direchot);
 
         Licenciatura inthot = new Licenciatura();
         inthot.setImageHome(R.drawable.lic_biotecnologia);
         inthot.setImageList(R.drawable.lic_inthot);
         inthot.setName("International Hotel Management");
         inthot.setEscuelaCode("es_hotel");
+        inthot.setCode("lic_inthot");
+        inthot.setImageDetail(R.drawable.direchot);
+        inthot.setImageProfile(R.drawable.direchot_profile);
+        inthot.setImageActivity(R.drawable.direchot_activities);
+        inthot.setProfile(R.string.profile_gesthot);
+        inthot.setActivity(R.string.descripcion_activities_direchot);
+        inthot.setPlanEstudio(R.string.list_studyplan_direchot);
 
 
         //ESCUELA DE LENGUAS
@@ -415,7 +540,13 @@ public class Licenciatura {
         lenguas.setImageList(R.drawable.lic_lenguas);
         lenguas.setName("Lenguas y Gestión Cultural");
         lenguas.setEscuelaCode("es_leng");
-
+        lenguas.setCode("lic_leng");
+        lenguas.setImageDetail(R.drawable.lenguas);
+        lenguas.setImageProfile(R.drawable.leng_profile);
+        lenguas.setImageActivity(R.drawable.leng_activities);
+        lenguas.setProfile(R.string.profile_leng);
+        lenguas.setActivity(R.string.descripcion_activities_leng);
+        lenguas.setPlanEstudio(R.string.list_studyplan_leng);
 
         //ESCUELA DE MEDICINA
         Licenciatura medcirujano = new Licenciatura();
@@ -423,12 +554,26 @@ public class Licenciatura {
         medcirujano.setImageList(R.drawable.lic_medciruja);
         medcirujano.setName("Médico Cirujano");
         medcirujano.setEscuelaCode("es_med");
+        medcirujano.setCode("lic_med");
+        medcirujano.setImageDetail(R.drawable.med);
+        medcirujano.setImageProfile(R.drawable.med_profile);
+        medcirujano.setImageActivity(R.drawable.med_activities);
+        medcirujano.setProfile(R.string.profile_med);
+        medcirujano.setActivity(R.string.descripcion_activities_med);
+        medcirujano.setPlanEstudio(R.string.list_studyplan_med);
 
         Licenciatura medsurg = new Licenciatura();
         medsurg.setImageHome(R.drawable.lic_biotecnologia);
         medsurg.setImageList(R.drawable.lic_medicine);
         medsurg.setName("Medicine & Surgery");
         medsurg.setEscuelaCode("es_med");
+        medsurg.setCode("lic_med");
+        medsurg.setImageDetail(R.drawable.med);
+        medsurg.setImageProfile(R.drawable.med_profile);
+        medsurg.setImageActivity(R.drawable.med_activities);
+        medsurg.setProfile(R.string.profile_med);
+        medsurg.setActivity(R.string.descripcion_activities_med);
+        medsurg.setPlanEstudio(R.string.list_studyplan_med);
 
 
         //ESCUELA DE NEGOCIOS
@@ -437,12 +582,24 @@ public class Licenciatura {
         admemp.setImageList(R.drawable.lic_amdmin);
         admemp.setName("Administración y Dirección de Empresas");
         admemp.setEscuelaCode("es_neg");
+        admemp.setCode("lic_admemp");
+        admemp.setImageDetail(R.drawable.admemp);
+        admemp.setImageProfile(R.drawable.admemp_profile);
+        admemp.setImageActivity(R.drawable.admemp_activities);
+        admemp.setProfile(R.string.profile_admemp);
+        admemp.setActivity(R.string.descripcion_activities_admemp);
+        admemp.setPlanEstudio(R.string.list_studyplan_admemp);
 
         Licenciatura direcfin = new Licenciatura();
         direcfin.setImageHome(R.drawable.lic_biotecnologia);
         direcfin.setImageList(R.drawable.lic_direcfin);
         direcfin.setName("Dirección Financiera");
         direcfin.setEscuelaCode("es_neg");
+        direcfin.setCode("lic_direcfin");
+        direcfin.setImageDetail(R.drawable.direcfin);
+        direcfin.setImageProfile(R.drawable.direcfin_profile);
+        direcfin.setImageActivity(R.drawable.direcfin_activities);
+
 
         Licenciatura conta = new Licenciatura();
         conta.setImageHome(R.drawable.lic_biotecnologia);
