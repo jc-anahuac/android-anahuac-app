@@ -28,8 +28,8 @@
                 android:value="" />
         </activity>
         <activity
-            android:theme="@style/Theme.AppCompat"
             android:name=".activities.UsActivity"
+            android:label="@string/title_us"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
