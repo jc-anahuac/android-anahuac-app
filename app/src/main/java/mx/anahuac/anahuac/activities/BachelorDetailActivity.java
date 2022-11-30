@@ -78,5 +78,6 @@ public class BachelorDetailActivity extends AppCompatActivity {
         });
     }
 
+
 }
 

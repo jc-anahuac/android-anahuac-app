@@ -1,10 +1,12 @@
 package mx.anahuac.anahuac.activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import java.util.ArrayList;
 
@@ -24,6 +26,9 @@ public class BachelorListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bachelor_list);
 
         rvEscuelas = findViewById(R.id.rv_escuela);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_arrow_back_ios_new_24);
+        
         ArrayList<Escuela> listEscuela = new ArrayList<>();
 
 
@@ -176,6 +181,14 @@ public class BachelorListActivity extends AppCompatActivity {
         rvEscuelas.setAdapter(adapter);
 
 
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == android.R.id.home) {
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
+

@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mx.anahuac.anahuac.R;
+import mx.anahuac.anahuac.activities.BachelorDetailActivity;
 import mx.anahuac.anahuac.activities.BachelorListActivity;
 import mx.anahuac.anahuac.activities.BachelorSubListActivity;
 import mx.anahuac.anahuac.models.Escuela;
@@ -37,10 +38,14 @@ public class BachelorSublistAdapter extends RecyclerView.Adapter<BachelorSublist
         Licenciatura campus = data.get(position);
         holder.tvBachelorName.setText(campus.getName());
         holder.ivBachelor.setImageResource(campus.getImageList());
-
-
-
-
+        holder.ivBachelor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), BachelorDetailActivity.class);
+                intent.putExtra("code",campus.getCode());
+                view.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
