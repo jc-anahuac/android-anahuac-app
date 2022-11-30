@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/confe_container"
+    android:layout_marginHorizontal="@dimen/margin_short"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_name_con"
+        android:layout_width="@dimen/carousel_latente"
+        android:layout_height="@dimen/carousel_latente"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/margin_default"
+        android:src="@drawable/lat_alex_salmar"
+        android:layout_marginTop="@dimen/margin_short"/>
+
+    <TextView
+        android:id="@+id/tv_name_con"
+        android:layout_width="@dimen/cero_dp"
+        android:layout_height="wrap_content"
+        android:text="@string/alex_salmar"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintTop_toBottomOf="@id/iv_name_con"
+        app:layout_constraintStart_toStartOf="@id/iv_name_con"
+        app:layout_constraintEnd_toEndOf="@id/iv_name_con"
+        android:lines="2"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

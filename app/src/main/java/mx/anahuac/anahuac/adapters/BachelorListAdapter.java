@@ -1,5 +1,6 @@
 package mx.anahuac.anahuac.adapters;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 
 import mx.anahuac.anahuac.R;
 import mx.anahuac.anahuac.activities.BachelorListActivity;
+import mx.anahuac.anahuac.activities.BachelorSubListActivity;
 import mx.anahuac.anahuac.models.Escuela;
 
 public class BachelorListAdapter extends RecyclerView.Adapter<BachelorListAdapter.ViewHolder> {
@@ -24,7 +26,7 @@ public class BachelorListAdapter extends RecyclerView.Adapter<BachelorListAdapte
     @NonNull
     @Override
     public BachelorListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_bachelor_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_escuela_item, parent, false);
         return new BachelorListAdapter.ViewHolder(view);
     }
 
@@ -33,6 +35,14 @@ public class BachelorListAdapter extends RecyclerView.Adapter<BachelorListAdapte
         Escuela campus = data.get(position);
         holder.tvBachelorName.setText(campus.getName());
         holder.ivBachelor.setImageResource(campus.getImage());
+        holder.ivBachelor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), BachelorSubListActivity.class);
+                intent.putExtra("code",campus.getCode());
+                view.getContext().startActivity(intent);
+            }
+        });
 
 
     }

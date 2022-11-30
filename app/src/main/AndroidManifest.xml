@@ -13,7 +13,23 @@
         android:theme="@style/Theme.Anahuac"
         tools:targetApi="31">
         <activity
+            android:name=".activities.BachelorSubListActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.AboutActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.UsActivity"
+            android:label="@string/title_us"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -35,14 +51,17 @@
         </activity>
         <activity
             android:name=".activities.BachelorDetailActivity"
+            android:parentActivityName=".activities.HomeActivity"
+            android:label="@string/diseno_multimedia"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".activities.LatenteHomeActivity"
+            android:label="@string/txt_titulo_latente"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -57,9 +76,8 @@
         </activity>
         <activity
             android:name=".activities.SplashActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:exported="true">
-
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -71,10 +89,9 @@
                 android:value="" />
         </activity>
         <activity
-            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".activities.HomeActivity"
-            android:exported="false">
-
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
