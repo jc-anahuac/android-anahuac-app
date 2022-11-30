@@ -18,4 +18,33 @@ Y EN EL TOP 3 DE UNIVERSIDADES PRIVADAS DE MÉXICO</string>
 
     <string name="campus_title">Campus</string>
     <string name="campus_description">Contamos con más de 60 licenciaturas, distribuidos los diferentes campus que tenemos para ti.</string>
+    <string name="description_norte">La Universidad Anáhuac México Campus Norte cuenta con 220, 000 m2 con un moderno diseño arquitectónico, grandes áreas verdes y edificios con espacios amplios y funcionales.</string>
+
+    <string name="anahuac_cancun">ANÁHUAC CANCÚN</string>
+    <string name="anahuac_cdmx_norte">ANÁHUAC MÉXICO - CAMPUS NORTE</string>
+    <string name="anahuac_iest">IEST ANÁHUAC</string>
+    <string name="anahuac_mayab">ANÁHUAC MAYAB</string>
+    <string name="anahuac_veracruz">ANÁHUAC VERACRUZ</string>
+    <string name="anahuac_oaxaca">ANÁHUAC OAXACA</string>
+    <string name="anahuac_puebla">ANÁHUAC PUEBLA</string>
+    <string name="anahuac_queretaro">ANÁHUAC QUERÉTARO</string>
+    <string name="txt_cancun"><![CDATA[
+        Quintana Roo, Primer Lugar Turístico de Playa en México y América Latina ya que recibió más de 21 millones de turistas en 2019. Cozumel y Costa Maya recibieron más de 1 mil 700 cruceros con un total de 6 millones 806 mil 697, pasajeros y tripulantes
+
+La excelente conectividad aérea que tiene Cancún con 81 ciudades del mundo contribuye a incrementar anualmente la llegada de turistas de todo el mundo a través del Aeropuerto Internacional de Cancún que recibió más de 25 millones 400 mil pasajeros en 2019.
+
+Ven y estudia en la Universidad Anáhuac de Cancún.
+
+        ]]></string>
+    <string name="txt_cdmx_norte"><![CDATA[
+        Todo el campus tiene acceso inalámbrico directo a internet. Desde prácticamente cualquier rincón de la Universidad, nuestros alumnos y profesores se benefician de una conexión inmediata de alta velocidad que les permite tener acceso a internet y a servicios académicos como calificaciones y selección de cursos vía web, entre otros.
+        ]]></string>
+    <string name="txt_mayab"><![CDATA[
+        Nuestra universidad se encuentra en la ciudad de Mérida, el corazón de la península de Yucatán, México. Estamos ubicados en el centro financiero, cultural y educativo del sureste mexicano. Nuestro campus recibe anualmente alumnos de distintas zonas geográficas de México, además de estudiantes procedentes de más de 10 países de Europa y Centroamérica.
+        ]]></string>
+
+    <string name="txt_top3">TOP 3</string>
+    <string name="txt_ubicacion">UBICACIÓN</string>
+    <string name="txt_infraestructura">La mejor infraestructura universitaria en el sureste de México</string>
+
 </resources>
