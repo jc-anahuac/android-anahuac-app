@@ -26,8 +26,6 @@
     <dimen name="elevation">2dp</dimen>
     <dimen name="video_size">230dp</dimen>
     <dimen name="margin_pagina">10dp</dimen>
-    <dimen name="item_lice_width">130dp</dimen>
-    <dimen name="item_lic_height">240dp</dimen>
 
     <dimen name="item_latente_img">217dp</dimen>
     
